@@ -4,7 +4,16 @@
 <?php
 get_header();
 ?>
-<h1>Home</h1>
+<main>
+    <div class="frase-da-pagina">
+        <h1>
+            Comes&Bebes
+        </h1>
+        <p>
+            O restaurante para todas as fomes
+        </p>
+    </div>
+</main>
 <?php
 get_footer();
 ?>
