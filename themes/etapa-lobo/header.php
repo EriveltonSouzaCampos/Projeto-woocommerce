@@ -14,5 +14,10 @@
 </head>
 <body <?php body_class(); ?>>
     <header>
-        
+        <!-- header -->
+        <section class="topo-do-site">
+            <div class="logo-e-pesquisa">
+                <?php the_custom_logo(); ?>
+            </div>
+        </section>
     </header>
