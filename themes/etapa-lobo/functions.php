@@ -9,7 +9,7 @@ define('JAVA_DIR', get_template_directory_uri() . '/assets/js');
 //Includes
 
 include_once(INCLUDES_DIR . '/enqueue.php');
-/* include_once(INCLUDES_DIR . '/setup-theme.php'); */
+include_once(INCLUDES_DIR . '/setup-theme.php');
 
  //hooks
  add_action('wp_enqueue_scripts', 'estilos_tema');
