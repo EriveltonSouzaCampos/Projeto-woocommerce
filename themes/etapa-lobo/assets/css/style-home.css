@@ -34,3 +34,6 @@
     padding: 0.60rem;
     font-size: 1.15rem;
 }
+::placeholder{
+    color: white;
+}
