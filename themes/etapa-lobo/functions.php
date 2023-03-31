@@ -13,5 +13,6 @@ include_once(INCLUDES_DIR . '/setup-theme.php');
 
  //hooks
  add_action('wp_enqueue_scripts', 'estilos_tema');
+ add_action('after_setup_theme', 'setup_theme_pf');
 
 ?>
