@@ -23,7 +23,8 @@
 		            <input type="text" name="s" id="s" placeHolder="Search">
 	            </form>
             </div>
-            <div>
+            <div class="navegação">
+                <!-- Navegação entre paginas -->
                 <button>
                     <a href="">Faça seu pedido</a>
                 </button>
