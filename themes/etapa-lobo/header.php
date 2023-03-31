@@ -16,8 +16,23 @@
     <header>
         <!-- header -->
         <section class="topo-do-site">
+            <!-- Logo e a barra de pesquisa -->
             <div class="logo-e-pesquisa">
                 <?php the_custom_logo(); ?>
+                <form action="<?php echo bloginfo('url'); ?>/loja/" method="get">
+		            <input type="text" name="s" id="s" placeHolder="Search">
+	            </form>
+            </div>
+            <div>
+                <button>
+                    <a href="">Faça seu pedido</a>
+                </button>
+                <a href="">
+                    <img src="<?php echo IMAGE_DIR . '/fa-solid_shopping-cart.svg' ?>" alt="Carrinho de compra">
+                </a>
+                <a href="">
+                    <img src="<?php echo IMAGE_DIR . '/bx_bxs-user-circle.svg' ?>" alt="Perfil usuario">
+                </a>
             </div>
         </section>
     </header>
