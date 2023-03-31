@@ -2,6 +2,8 @@
     background-color: #F5C661;
     display: flex;
     justify-content: center;
-    font-size: 14px;
+    font-size: 0.958rem;
+    padding: 0.125rem 0;
     width: 100%;
+    font-weight: 600;
 }
