@@ -20,12 +20,12 @@
             <div class="logo-e-pesquisa">
                 <?php the_custom_logo(); ?>
                 <form action="<?php echo bloginfo('url'); ?>/loja/" method="get">
-		            <input type="text" name="s" id="s" placeHolder="Search">
+		            <input class="pesquisa-do-header" type="text" name="s" id="s" placeHolder="Search">
 	            </form>
             </div>
             <div class="navegação">
                 <!-- Navegação entre paginas -->
-                <button>
+                <button id="botao-para-loja">
                     <a href="">Faça seu pedido</a>
                 </button>
                 <a href="">
