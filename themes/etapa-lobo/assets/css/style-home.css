@@ -1,0 +1,17 @@
+.topo-do-site{
+    background-color:rgb(112, 45, 134);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+.logo-e-pesquisa{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+.navegação{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
