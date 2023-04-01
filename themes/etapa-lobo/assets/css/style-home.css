@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     padding: 2.5rem 0 5rem 0;
+    
 }
 .frase-da-pagina h1{
     font-size: 3rem;
@@ -15,6 +16,7 @@
 .frase-da-pagina p{
     color: #fafafa;
     font-size: 1.625rem;
+    font-family: 'barlow';
 }
 /*FIM*/
 
@@ -23,9 +25,13 @@
     display: flex;
     justify-content: center;
     padding: 1.875rem 0 3.75rem 0;
+    font-family: 'roboto';
+    color: rgba(0, 0, 0, 0.836);
 }
 #texto-das-categorias{
-    padding: 1.5rem 0 1.5rem 1.25rem;
+    padding: 0 0 1.125rem 1.5rem;
+    font-size: 1.5rem;
+    font-family: 'roboto';
 }
 .menu-categorias-dos-produtos-container ul{
     display: flex;
@@ -46,5 +52,26 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+@media(max-width: 718px){
+    .menu-categorias-dos-produtos-container ul{
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
+@media(max-width: 390px){
+    .frase-da-pagina h1, p{
+        text-align: center;
+    }
+    .frase-da-pagina h1{
+        font-size: 2.7rem;
+    }
+    .menu-categoria-produtos h1{
+        text-align: center;
+    }
+    #texto-das-categorias{
+        padding: 0;
+        padding-bottom: 1.5rem;
+    }
 }
 /*fim*/
