@@ -133,4 +133,10 @@
     padding: 0.50rem;
     margin-right: 0.25rem;
 }
+@media(max-width: 1146px){
+    .conter-pratos-do-dia{
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
 /*fim*/
