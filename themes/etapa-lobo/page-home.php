@@ -45,61 +45,56 @@ get_header();
             </p>
         </div>     
     <!-- fim -->
-    <!-- PRATOS DA SEMANA -->
-        
-<div class="conter-pratos-do-dia">
-    <?php
-        // Obter a tag que estamos procurando
-        $tag_to_match = ucfirst(utf8_encode(strftime('%A')));
-
-        // Definir argumentos de consulta para obter produtos com a tag correspondente
-        $args = array(
-            'post_type'      => 'product',
-            'posts_per_page' => -1,
-            'tax_query'      => array(
-                array(
-                    'taxonomy' => 'product_tag',
-                    'field'    => 'name',
-                    'terms'    => $tag_to_match,
-                ),
-            ),
-        );
-        $products = new WP_Query( $args );
-        if ( $products->have_posts() ) {
-            while ( $products->have_posts() ) {
-                $products->the_post();
-                $product_id = get_the_ID(); // obtém o ID do produto atual
-                $product_tag = wc_get_product_tag_list( $product_id ); // obtém a lista de tags do produto atual
-                // Verifica se o produto tem a tag correspondente
-                if ( strpos( $product_tag, $tag_to_match ) !== false ) {
-                    $product_image_id = get_post_thumbnail_id( $product_id ); // obtém o ID da imagem em destaque do produto
-                    $product_image_url = wp_get_attachment_url( $product_image_id ); // obtém a URL da imagem usando o ID
-                    $nome_do_produto = get_the_title();
-                    $link_do_produto = get_permalink();
-                     
-                    ?>
-                    <div class="prato-do-dia" style="background-image: url('<?php echo $product_image_url; ?>'); "> 
-                        <div class="info-dos-pratos-do-dia">
-                            <p> <?php echo $nome_do_produto; ?> </p>
-                            <div class="preço-e-btn-de-compra">
-                                <p> <?php echo woocommerce_template_loop_price(); ?> </p>
-                                <button>
-                                    <a href=" <?php echo $link_do_produto; ?> ">
-                                    <img src="<?php echo IMAGE_DIR . '/fa-solid_cart-plus.svg' ?>" alt="Carrinho">
-                                    </a>
-                                </button>
+    <!-- PRATOS DA SEMANA --> 
+        <div class="conter-pratos-do-dia">
+            <?php
+                // Obter a tag que estamos procurando
+                $tag_to_match = ucfirst(utf8_encode(strftime('%A')));
+                // Definir argumentos de consulta para obter produtos com a tag correspondente
+                $args = array(
+                    'post_type'      => 'product',
+                    'posts_per_page' => -1,
+                    'tax_query'      => array(
+                    array(
+                        'taxonomy' => 'product_tag',
+                        'field'    => 'name',
+                        'terms'    => $tag_to_match,
+                        ),
+                    ),
+                );
+                $products = new WP_Query( $args );
+                if ( $products->have_posts() ) {
+                    while ( $products->have_posts() ) {
+                        $products->the_post();
+                        $product_id = get_the_ID(); // obtém o ID do produto atual
+                        $product_tag = wc_get_product_tag_list( $product_id ); // obtém a lista de tags do produto atual
+                        // Verifica se o produto tem a tag correspondente
+                        if ( strpos( $product_tag, $tag_to_match ) !== false ) {
+                            $product_image_id = get_post_thumbnail_id( $product_id ); // obtém o ID da imagem em destaque do produto
+                            $product_image_url = wp_get_attachment_url( $product_image_id ); // obtém a URL da imagem usando o ID
+                            $nome_do_produto = get_the_title();
+                            $link_do_produto = get_permalink();
+                            ?><!-- Quebra do php -->
+                            <div class="prato-do-dia" style="background-image: url('<?php echo $product_image_url; ?>'); "> 
+                                <div class="info-dos-pratos-do-dia">
+                                    <p> <?php echo $nome_do_produto; ?> </p>
+                                    <div class="preço-e-btn-de-compra">
+                                        <p> <?php echo woocommerce_template_loop_price(); ?> </p>
+                                        <button>
+                                            <a href=" <?php echo $link_do_produto; ?> ">
+                                            <img src="<?php echo IMAGE_DIR . '/fa-solid_cart-plus.svg' ?>" alt="Carrinho">
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <?php
-
+                            <?php /* Retoma o php */
+                        }
+                    }
+                    wp_reset_postdata(); // redefinir a consulta do loop
                 }
-            }
-            wp_reset_postdata(); // redefinir a consulta do loop
-        }
-    ?>
-</div>
-
+            ?>
+        </div>
     <!-- fim -->
 </main>
 <?php
