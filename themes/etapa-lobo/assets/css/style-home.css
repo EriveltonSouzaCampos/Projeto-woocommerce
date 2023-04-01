@@ -18,7 +18,7 @@
     font-size: 1.625rem;
     font-family: 'barlow';
 }
-/*FIM*/
+/*fim*/
 
 /*TIPOS DE PRODUTOS*/
 .menu-categoria-produtos h1{
@@ -56,7 +56,7 @@
     padding-top: 0.5rem;
     font-size: 1.125rem;
 }
-@media(max-width: 718px){
+@media(max-width: 765px){
     .menu-categorias-dos-produtos-container ul{
         justify-content: center;
         gap: 1.5rem;
@@ -78,6 +78,7 @@
     }
 }
 /*fim*/
+
 /*DIA DA SEMANA NA PAGINA HOME*/
 .dia-da-semana h2{
     font-size: 1.875rem;
@@ -88,5 +89,48 @@
     font-family: 'barlow';
     font-size: 1.5rem;
     font-weight: 600;
+}
+/*fim*/
+
+/*PRATOS DO DIA*/
+.conter-pratos-do-dia{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.prato-do-dia{
+    background-repeat: no-repeat;
+    height: 21rem;
+    width: 18rem;
+    position: relative;
+    background-size: cover;
+    
+}
+.info-dos-pratos-do-dia{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(92.1deg, #6A066D 0%, rgba(142, 87, 143, 0.757243) 71.87%, rgba(119, 64, 121, 0.661458) 99.99%, rgba(196, 196, 196, 0) 100%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    gap: 1.125rem;
+    color: white
+}
+.info-dos-pratos-do-dia p{
+    margin-top: 0.625rem;
+}
+.preço-e-btn-de-compra{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.625rem;
+}
+.preço-e-btn-de-compra button{
+    border: none;
+    border-radius: 0.625rem;
+    background-color: #F5C661;
+    padding: 0.50rem;
+    margin-right: 0.25rem;
 }
 /*fim*/
