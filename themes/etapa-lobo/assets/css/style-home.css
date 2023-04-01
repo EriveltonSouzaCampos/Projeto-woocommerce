@@ -17,3 +17,34 @@
     font-size: 1.625rem;
 }
 /*FIM*/
+
+/*TIPOS DE PRODUTOS*/
+.menu-categoria-produtos h1{
+    display: flex;
+    justify-content: center;
+    padding: 1.875rem 0 3.75rem 0;
+}
+#texto-das-categorias{
+    padding: 1.5rem 0 1.5rem 1.25rem;
+}
+.menu-categorias-dos-produtos-container ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.Categoria-content{
+    background-repeat: no-repeat;
+    height: 13.125rem;
+    width: 15rem;
+    position: relative;
+    background-size: cover;
+}
+.Categoria-titulo{
+    background: linear-gradient(92.1deg, #6A066D 0%, rgba(142, 87, 143, 0.757243) 71.87%, rgba(119, 64, 121, 0.661458) 99.99%, rgba(196, 196, 196, 0) 100%);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/*fim*/
