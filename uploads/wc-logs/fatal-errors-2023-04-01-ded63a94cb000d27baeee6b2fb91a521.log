@@ -1,0 +1,64 @@
+2023-04-01T16:32:08+00:00 CRITICAL syntax error, unexpected token "echo" in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 65
+
+2023-04-01T16:32:40+00:00 CRITICAL syntax error, unexpected identifier "IMAGE_DIR" in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 65
+
+2023-04-01T16:33:18+00:00 CRITICAL syntax error, unexpected single-quoted string "/fa-solid_cart-plus.svg" in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 65
+
+2023-04-01T16:33:48+00:00 CRITICAL syntax error, unexpected single-quoted string "" alt="Carrinho"></button>" in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 69
+
+2023-04-01T16:34:56+00:00 CRITICAL syntax error, unexpected single-quoted string "" ></button>" in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 69
+
+2023-04-01T16:35:25+00:00 CRITICAL syntax error, unexpected double-quote mark in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 65
+
+2023-04-01T16:37:15+00:00 CRITICAL syntax error, unexpected token ";", expecting ")" in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 54
+
+2023-04-01T16:39:22+00:00 CRITICAL syntax error, unexpected token "." in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 62
+
+2023-04-01T13:41:41-03:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_image_url() in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php:56
+Stack trace:
+#0 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Pichau...')
+#2 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\index.php(17): require('C:\\Users\\Pichau...')
+#3 {main}
+  thrown in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 56
+
+2023-04-01T16:48:35+00:00 CRITICAL syntax error, unexpected token "." in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 68
+
+2023-04-01T16:51:18+00:00 CRITICAL syntax error, unexpected token "." in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 68
+
+2023-04-01T16:51:27+00:00 CRITICAL syntax error, unexpected variable "$css" in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 68
+
+2023-04-01T17:16:50-03:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_image_URL() in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php:68
+Stack trace:
+#0 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Pichau...')
+#2 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\index.php(17): require('C:\\Users\\Pichau...')
+#3 {main}
+  thrown in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 68
+
+2023-04-01T17:17:06-03:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_image_url() in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php:68
+Stack trace:
+#0 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Pichau...')
+#2 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\index.php(17): require('C:\\Users\\Pichau...')
+#3 {main}
+  thrown in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 68
+
+2023-04-01T17:17:42-03:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::woocommerce_get_product_thumbnail() in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php:68
+Stack trace:
+#0 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Pichau...')
+#2 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\index.php(17): require('C:\\Users\\Pichau...')
+#3 {main}
+  thrown in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 68
+
+2023-04-01T20:35:44+00:00 CRITICAL syntax error, unexpected token "echo", expecting "," or ";" in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 72
+
+2023-04-01T17:38:11-03:00 CRITICAL Uncaught Error: Call to a member function get_tags() on null in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php:62
+Stack trace:
+#0 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Pichau...')
+#2 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\index.php(17): require('C:\\Users\\Pichau...')
+#3 {main}
+  thrown in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 62
+
