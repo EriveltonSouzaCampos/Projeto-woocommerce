@@ -8,6 +8,8 @@
 .logo-e-pesquisa{
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1.25rem;
 }
 .navegação{
@@ -16,7 +18,6 @@
     gap: 1.25rem;
 }
 .pesquisa-do-header{
-    margin-left: 1.30rem;
     border: none;
     border-bottom: 0.125rem solid #F5C661;
     background-image: url('../images/bx_bx-search.svg');
@@ -25,7 +26,7 @@
     padding-left: 1.85rem;
     font-size: 1.15rem;
     color: #F5C661;
-    width: 20vw;
+    width: 100%;
     outline: none;
     color: white;
 }
