@@ -37,6 +37,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-bottom: 6rem;
 }
 
 .Categoria-content{
@@ -52,6 +53,8 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    padding-top: 0.5rem;
+    font-size: 1.125rem;
 }
 @media(max-width: 718px){
     .menu-categorias-dos-produtos-container ul{
@@ -73,5 +76,17 @@
         padding: 0;
         padding-bottom: 1.5rem;
     }
+}
+/*fim*/
+/*DIA DA SEMANA NA PAGINA HOME*/
+.dia-da-semana h2{
+    font-size: 1.875rem;
+    font-weight: 700;
+    font-family: 'roboto';
+}
+.dia-da-semana p{
+    font-family: 'barlow';
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 /*fim*/
