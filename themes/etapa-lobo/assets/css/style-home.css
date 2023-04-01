@@ -80,6 +80,9 @@
 /*fim*/
 
 /*DIA DA SEMANA NA PAGINA HOME*/
+.dia-da-semana{
+    padding: 0 0 1.125rem 1.25rem;
+}
 .dia-da-semana h2{
     font-size: 1.875rem;
     font-weight: 700;
@@ -90,6 +93,16 @@
     font-size: 1.5rem;
     font-weight: 600;
 }
+@media(max-width: 390px){
+    .dia-da-semana{
+        text-align: center;
+        display: flex;
+        padding: 0;
+        padding-bottom: 1.125rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
 /*fim*/
 
 /*PRATOS DO DIA*/
@@ -97,6 +110,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-bottom: 1.5rem;
 }
 .prato-do-dia{
     background-repeat: no-repeat;
@@ -139,4 +153,5 @@
         gap: 1.5rem;
     }
 }
+
 /*fim*/
