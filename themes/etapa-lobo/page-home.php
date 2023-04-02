@@ -96,6 +96,10 @@ get_header();
             ?>
         </div>
     <!-- fim -->
+    <!-- BOTÃO DE OPÇÕES -->
+                <div id="btn-para-opções"><button><a href="">Veja outras opções</a></button></div>
+    <!-- fim -->
+    <!--  -->
 </main>
 <?php
 get_footer();
