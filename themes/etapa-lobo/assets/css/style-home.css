@@ -153,5 +153,19 @@
         gap: 1.5rem;
     }
 }
-
 /*fim*/
+/*  BTN PARA MAIS OPÇÕES */
+#btn-para-opções{
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+#btn-para-opções button{
+    border: none;
+    background-color: #F5C661;
+    padding: 1.125rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    font-family: 'roboto';
+}
+/* fim */
