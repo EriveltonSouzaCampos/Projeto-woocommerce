@@ -116,8 +116,40 @@ get_header();
                     <p>Av. Roberto Silveira, 123 - Icaraí</p>
                 </div>
             </div>
-            <h1>SLIDE DE FOTOS</h1>
-        </div>
+            <?php 
+                function slideFotos(){
+                    $acf_field_group = acf_get_field_group(78);
+                    $acf_fields = acf_get_fields(78);
+                    $counter = 1;
+                    foreach ($acf_fields as $field) {
+                        $name = $field['name'];
+                        $size = 'full';
+                        $image = get_field($name);
+                        
+                        ?>
+                        <div class="slide-loja" id="<?=$counter?>">
+                            <?php echo wp_get_attachment_image( $image, $size ); ?>
+                        </div>
+                        <?php 
+                        $counter++;
+                    }
+                }
+                function implementarDots(){
+                $acf_fields = acf_get_fields(78);
+                $numeroDeDots = count($acf_fields) - 3;
+
+                ?>
+                <a class="dot-apoiadores active"></a>
+                <?php 
+                for ($i=0; $i < $numeroDeDots - 1; $i++) { 
+                    ?>
+                    <a class="dot-apoiadores"></a>
+                    <?php 
+                }
+            }
+
+            ?>
+               
     <!-- fim -->
 </main>
 <?php
