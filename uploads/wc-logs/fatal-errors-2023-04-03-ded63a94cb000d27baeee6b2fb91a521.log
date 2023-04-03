@@ -6,3 +6,15 @@ Stack trace:
 #3 {main}
   thrown in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 129
 
+2023-04-03T14:21:31-03:00 CRITICAL Uncaught Error: Undefined constant "php" in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php:197
+Stack trace:
+#0 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Pichau...')
+#2 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\index.php(17): require('C:\\Users\\Pichau...')
+#3 {main}
+  thrown in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 197
+
+2023-04-03T17:45:21+00:00 CRITICAL syntax error, unexpected token "." in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 130
+
+2023-04-03T17:45:34+00:00 CRITICAL syntax error, unexpected token "." in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 130
+
