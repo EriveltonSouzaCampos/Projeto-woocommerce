@@ -97,9 +97,28 @@ get_header();
         </div>
     <!-- fim -->
     <!-- BOTÃO DE OPÇÕES -->
-                <div id="btn-para-opções"><button><a href="">Veja outras opções</a></button></div>
+        <div id="btn-para-opções"><button><a href="">Veja outras opções</a></button></div>
     <!-- fim -->
-    <!--  -->
+    <!-- VISITE NOSSA LOJA -->
+        <div id="texto-visite-loja">
+            <h1>Visite nossa loja</h1>
+        </div>
+        <div class="info-da-loja-e-slides">
+            <div class="info-da-loja">
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.3285848324467!2d-43.11068118503443!3d-22.90124818501454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9983e5637f8d7d%3A0x4b064fe0f4ae124b!2sAv.%20Roberto%20Silveira%2C%20123%20-%20Icara%C3%AD%2C%20Niter%C3%B3i%20-%20RJ%2C%2024230-150!5e0!3m2!1spt-BR!2sbr!4v1675792835515!5m2!1spt-BR!2sbr" width="345" height="203" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="img-e-texto">
+                    <img src="<?php echo IMAGE_DIR . '/TelefoneContato.svg' ?>" alt="Icone telefone">
+                    <p>(21) 9 9895-9698</p>
+                </div>
+                <div class="img-e-texto">
+                    <img src=" <?php echo IMAGE_DIR . '/Talheres.svg' ?> " alt="Icone talheres">
+                    <p>Av. Roberto Silveira, 123 - Icaraí</p>
+                </div>
+            </div>
+            <h1>SLIDE DE FOTOS</h1>
+        </div>
+    <!-- fim -->
 </main>
 <?php
 get_footer();
