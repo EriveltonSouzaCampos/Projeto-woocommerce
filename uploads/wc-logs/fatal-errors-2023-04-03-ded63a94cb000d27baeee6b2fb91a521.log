@@ -18,3 +18,9 @@ Stack trace:
 
 2023-04-03T17:45:34+00:00 CRITICAL syntax error, unexpected token "." in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 130
 
+2023-04-03T19:17:14+00:00 CRITICAL syntax error, unexpected identifier "get_field" in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 137
+
+2023-04-03T19:18:00+00:00 CRITICAL syntax error, unexpected identifier "get_field" in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 137
+
+2023-04-03T19:19:42+00:00 CRITICAL syntax error, unexpected identifier "get_field" in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 137
+
