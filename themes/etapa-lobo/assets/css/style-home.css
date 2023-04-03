@@ -196,14 +196,14 @@
     gap: 1.05rem;
 }
 /* fim */
-.carousel-container {
+.slide-container {
     position: relative;
     width: 60%;
     height: 50vh;
     overflow: hidden;
   }
   
-  .carousel-images {
+.slide-imagens {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -221,25 +221,25 @@
     width: 59.98vw;
 }
 
-
-  
-  .dot-nav {
+.dot-nav {
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-  }
-  
-  .dot-nav span {
+}
+
+.dot-nav span {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     margin: 0 10px;
-    background-color: #ccc;
+    background-color: #a0a0a0;
     cursor: pointer;
-  }
-  
-  .dot-nav span.active {
-    background-color: #555;
-  }
+}
+.dot-nav span:hover{
+    background-color: #6A066D;
+}
+.dot-nav span.active {
+    background-color: #272727;
+}
