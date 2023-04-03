@@ -15,7 +15,19 @@ include_once(INCLUDES_DIR . '/setup-theme.php');
  add_action('wp_enqueue_scripts', 'estilos_tema');
  add_action('after_setup_theme', 'setup_theme_pf');
 
- /* Edita o nav menu para aparecer estes elementos*/
+/* Adicionado meu arq js com biblioteca JQuery */
+  function add_jquery() {
+
+    // Carrega o jQuery do WordPress
+    wp_enqueue_script('jquery');
+    
+    // Carrega seu arquivo JavaScript que depende do jQuery
+    wp_enqueue_script('meu-script', JAVA_DIR . '/js/js-slides-loja.js', array('jquery'), '1.0.0', true);
+  }
+  add_action('wp_enqueue_scripts', 'add_jquery');
+/* fim */
+
+/* Edita o nav menu para aparecer estes elementos*/
  add_filter('wp_nav_menu_objects', 'transforma_menu');
  function transforma_menu($itens){
     foreach($itens as $item){

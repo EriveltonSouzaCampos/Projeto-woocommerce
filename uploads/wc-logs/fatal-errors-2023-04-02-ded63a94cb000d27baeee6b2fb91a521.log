@@ -1,0 +1,8 @@
+2023-04-02T23:40:27-03:00 CRITICAL Uncaught Error: Call to undefined function get_field() in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php:120
+Stack trace:
+#0 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Pichau...')
+#2 C:\Users\Pichau\Local Sites\etapa-lobo\app\public\index.php(17): require('C:\\Users\\Pichau...')
+#3 {main}
+  thrown in C:\Users\Pichau\Local Sites\etapa-lobo\app\public\wp-content\themes\etapa-lobo\page-home.php on line 120
+
