@@ -150,18 +150,21 @@ get_header();
                 document.addEventListener("DOMContentLoaded", function(event) {
                     const carouselImages = document.querySelector('.slide-imagens');
                     let currentIndex = 0;
-                    const intervalTime = 8000;
-
                     function nextSlide() {
-                        currentIndex++;
-                        if (currentIndex > carouselImages.children.length - 1) {
+                        if (slideClicked) {
+                            currentIndex = clickedIndex;
+                        } else {
+                            currentIndex++;
+                            if (currentIndex > carouselImages.children.length - 1) {
                             currentIndex = 0;
+                            }
                         }
+                        slideClicked = false;
+
                         carouselImages.style.transform = `translateX(-${currentIndex * 100}%)`;
                         document.querySelector('.dot-nav .active').classList.remove('active');
                         document.querySelector(`.dot-nav span:nth-child(${currentIndex + 1})`).classList.add('active');
                     }
-
                     function createDots() {
                         const dotNav = document.querySelector('.dot-nav');
                         for (let i = 0; i < carouselImages.children.length; i++) {
@@ -183,9 +186,26 @@ get_header();
 
                     createDots();
 
-                    setInterval(() => {
-                    nextSlide();
-                    }, intervalTime);
+                    const dots = document.querySelectorAll('.dot-nav span');
+                    const slideInterval = 5000;
+                    let slideTimer, slideClicked = false, clickedIndex;
+
+                    function resetSlideTimer() {
+                    clearInterval(slideTimer);
+                    slideTimer = setInterval(nextSlide, slideInterval);
+                    }
+
+                    dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => {
+                        slideClicked = true;
+                        clickedIndex = index;
+                        resetSlideTimer();
+                        document.querySelector('.dot-nav .active').classList.remove('active');
+                        dot.classList.add('active');
+                    });
+                    });
+
+                    resetSlideTimer();
                 });
             </script>
         <!-- fim -->
