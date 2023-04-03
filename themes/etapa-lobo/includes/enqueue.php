@@ -8,7 +8,7 @@ function estilos_tema(){
     wp_register_style('style-home', STYLES_DIR . '/style-home.css', [], '1.0.0', false);
     wp_register_style('style-header', STYLES_DIR . '/style-header.css', [], '1.0.0', false);
     wp_register_style('style-footer', STYLES_DIR . '/style-footer.css', [], '1.0.0', false);
-
+    wp_register_script( 'js-slide', STYLES_DIR . '/js-slides-foto-loja.js', [], '1.0.0', true);
 
     
     //Enfileirando
@@ -17,6 +17,7 @@ function estilos_tema(){
     wp_enqueue_style('style-home');
     wp_enqueue_style('style-header');
     wp_enqueue_style('style-footer');
+    wp_enqueue_script('js-slide');
 
     
 }
