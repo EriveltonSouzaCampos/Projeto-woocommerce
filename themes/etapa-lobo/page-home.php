@@ -130,16 +130,16 @@ get_header();
                 function slideFotos(){
                     $acf_field_group = acf_get_field_group(87);
                     $acf_fields = acf_get_fields(87);
-                    $counter = 1;
+                    $contador_de_img = 1;
                     foreach ($acf_fields as $field) {
-                        $name = $field['name'];
-                        $size = 'full';
-                        $image = get_field($name);
+                        $nome = $field['name'];
+                        $tamanho = 'full';
+                        $imagem = get_field($nome);
                         
                         ?>
-                        <div class="img-do-carrosel"id="f<?=$counter?>"><?php echo wp_get_attachment_image( $image, $size ); ?></div>
+                        <div class="img-do-carrosel"id="f<?=$contador_de_img?>"><?php echo wp_get_attachment_image( $imagem, $tamanho ); ?></div>
                         <?php 
-                        $counter++;
+                        $contador_de_img++;
                     }
                 }
             ?>
@@ -148,7 +148,7 @@ get_header();
         <!-- JS para os slides e os dots funcionar (em um arq a parte nao funcionou?) -->
             <script>
                 document.addEventListener("DOMContentLoaded", function(event) {
-                    const carouselImages = document.querySelector('.carousel-images');
+                    const carouselImages = document.querySelector('.slide-imagens');
                     let currentIndex = 0;
                     const intervalTime = 8000;
 
@@ -191,8 +191,8 @@ get_header();
         <!-- fim -->
 
         <!-- Slide de fotos da loja -->    
-            <div class="carousel-container">
-                <div class="carousel-images">
+            <div class="slide-container">
+                <div class="slide-imagens">
                     <?php  slideFotos(); ?>
                 </div>
                 <div class="dot-nav"></div>
