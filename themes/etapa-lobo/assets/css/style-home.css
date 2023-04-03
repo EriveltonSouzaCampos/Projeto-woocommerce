@@ -169,3 +169,30 @@
     font-family: 'roboto';
 }
 /* fim */
+/* SECÇÃO VISITE NOSSA LOJA */
+#texto-visite-loja{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(112, 45, 134);
+    color: white;
+}
+#texto-visite-loja h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'roboto';
+    padding: 1.125rem 0;
+}
+.info-da-loja-e-slides{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem 0;
+    background-color: rgb(112, 45, 134);
+}
+.img-e-texto{
+    display: flex;
+    justify-content: start;
+    color: white;
+    padding-top: 1.125rem;
+    gap: 1.05rem;
+}
+/* fim */
