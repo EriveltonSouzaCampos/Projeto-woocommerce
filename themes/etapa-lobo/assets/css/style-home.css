@@ -187,6 +187,7 @@
     justify-content: space-evenly;
     padding: 3rem 0;
     background-color: rgb(112, 45, 134);
+    flex-wrap: wrap;
 }
 .img-e-texto{
     display: flex;
@@ -196,21 +197,22 @@
     gap: 1.05rem;
 }
 /* fim */
+
+/* SLIDES */
 .slide-container {
     position: relative;
     width: 60%;
     height: 50vh;
     overflow: hidden;
-  }
+}
   
 .slide-imagens {
     position: absolute;
     width: 100%;
     height: 100%;
     display: flex;
-    transition: transform 1s ease-in-out;
-  }
-
+    transition: transform 1s ease-out;
+}
 .img-do-carrosel{
     width: 100%;
     height: 100%;
@@ -220,7 +222,6 @@
     height: 100%;
     width: 59.98vw;
 }
-
 .dot-nav {
     position: absolute;
     bottom: 20px;
@@ -228,18 +229,34 @@
     transform: translateX(-50%);
     display: flex;
 }
-
 .dot-nav span {
-    width: 10px;
-    height: 10px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     margin: 0 10px;
-    background-color: #a0a0a0;
+    background-color: #666666;
     cursor: pointer;
 }
 .dot-nav span:hover{
-    background-color: #6A066D;
+    background-color: #000000;
 }
 .dot-nav span.active {
-    background-color: #272727;
+    background-color: #202020;
 }
+@media(max-width: 860px){
+    .info-da-loja-e-slides{
+        justify-content: center;
+        gap: 6rem;
+    }
+    .slide-container{
+        width: 90%;
+        height: 60vh;
+    }
+    .img-do-carrosel img{
+        width: 90vw;
+    }
+    .info-dos-pratos-do-dia p{
+        text-align: start;
+    }
+}
+/* fim */
