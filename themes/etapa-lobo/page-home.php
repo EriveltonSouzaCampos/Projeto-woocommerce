@@ -5,6 +5,7 @@
 get_header();
 ?>
 <main>
+    <div class="linha-amarela"></div> 
     <!-- FRASE DA PAGINA HOME -->
         <div class="frase-da-pagina">
             <h1>
@@ -109,6 +110,7 @@ get_header();
         <div id="texto-visite-loja">
             <h1>Visite nossa loja</h1>
         </div>
+        <div class="linha-amarela"></div> 
         <!-- informação da loja: mapa numero e endereço -->
             <div class="info-da-loja-e-slides">
                 <div class="info-da-loja">
@@ -124,7 +126,7 @@ get_header();
                     </div>
                 </div>
         <!-- fim -->
-
+                                   
         <!-- pegando as imagens do ACF -->
             <?php 
                 function slideFotos(){
